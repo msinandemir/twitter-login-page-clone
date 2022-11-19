@@ -13,8 +13,6 @@ body {
 
 .background {
     display: flex;
-    width: inherit;
-    height: inherit;
     background: rgba(91, 112, 131, 0.4);
     height: 939px;
 
@@ -226,4 +224,29 @@ font-family:'Open Sans', sans-serif;
 
 .login #username:focus::placeholder{
     visibility: hidden;
+}
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 500px){
+
+.background{
+    background: black;
+}
+.container{
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+.login{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 }
