@@ -1,0 +1,229 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    
+}
+
+body {
+    background: black;
+    
+}
+
+.background {
+    display: flex;
+    width: inherit;
+    height: inherit;
+    background: rgba(91, 112, 131, 0.4);
+    height: 939px;
+
+}
+
+
+.container {
+    align-items: center;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    width: 600px;
+    height: 650px;
+    background: black;
+    flex-direction: column;
+    border-radius: 15px;
+    position: relative;
+}
+
+/* HEADER */
+
+.container .header {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .header-close {
+    fill: rgb(214, 217, 219);
+    margin-left: 10px;
+    position: absolute;
+    top:15px;
+    left: 10px;
+}
+.container .header-close svg{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+
+}
+
+
+.container .header-logo {
+    fill: rgb(214, 217, 219);
+    
+}
+.container .header-logo {
+    width: 30px;
+    height: 24px;
+}
+
+
+/* LOGIN */
+.login{
+    display: flex;
+    flex-direction:column ;
+    margin: 0 110px;
+}
+
+.login .loginText{
+    margin-bottom: 2rem;
+    text-align: left;
+    margin-top: 2.3rem;
+    width: 3000;
+    height: 76;
+    color: rgb(231, 233, 234);
+    font-weight:700;
+    font-size: 31px;
+    line-height: 36px;
+}
+
+.login .loginText .loginSpan{
+   font-family:'Open Sans', sans-serif;
+}
+.login .btnLoginWithGoogle{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 300px;
+height: 44px;
+padding: 4px 20px;
+letter-spacing: .25px;
+color: #3c4043;
+font-size: 14px;
+cursor: pointer;
+background: #fff;
+border-radius: 20px;
+font-weight: 500;
+}
+
+.login .btnLoginWithGoogle svg, .btnLoginWithApple svg{
+    width: 1.2rem;
+    margin-right: .4rem;
+}
+
+
+.login .btnLoginWithApple {
+ display: flex;
+align-items: center;
+justify-content: center;
+width: 300px;
+height: 44px;
+padding: 4px 20px;
+letter-spacing: .25px;
+color: #3c4043;
+font-size: 14px;
+cursor: pointer;
+background: #fff;
+border-radius: 20px;
+font-weight: 700;
+margin-top: 1.5rem;
+font-family:'Open Sans', sans-serif; 
+}
+
+.or{
+    width: 295px;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: .7rem;
+    display: flex;
+    align-items: center;
+}
+
+.or .text{
+    color: rgb(231, 233, 234);
+    padding: 0 10px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.or .border{
+    width: 100%;
+    height: 1px;
+    background: rgb(51, 54, 57);;
+}
+
+.login .username{
+    display: flex;
+    position: relative;
+}
+.login #username{
+    width: 300px;
+    height: 56px;
+    padding: 5px 5px ;
+    border-radius: .2rem;
+    background: black;
+    border: 1px solid rgb(51, 54, 57);
+    overflow: hidden;
+    font-size: 19px;
+    margin-bottom: 1rem;
+    text-overflow: ellipsis;
+    color: rgb(214, 217, 219);
+
+}
+
+.login .btnNext{
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: .5rem;
+    padding: 0px 16px;
+}
+
+.login .btnForget{
+    width: 300px;
+    height: 36px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 1.2rem;
+    color: rgb(214, 217, 219);
+    background: black;
+    border: 1px solid rgba(214, 217, 219, .7);
+    transition: all .5s;
+}
+
+.login .signInText{
+    color: rgba(214, 217, 219, .4);
+    text-align: left;
+    font-size: 400;
+    margin-top: 3rem;
+    font-size: 15px;
+}
+
+.login .signInText .signLink{
+    color: #1D9BF0;
+    text-decoration: none;
+}
+
+
+
+/* HOVERS  */
+
+
+.login .btnLoginWithGoogle:hover, .btnLoginWithApple:hover, .btnNext:hover{
+    opacity: .93;
+}
+
+.login .btnForget:hover{
+    background: rgba(51, 54, 57, .6);
+}
+
+.login .signInText .signLink:hover{
+    text-decoration: underline;
+}
+
+.login #username:focus::placeholder{
+    visibility: hidden;
+}
