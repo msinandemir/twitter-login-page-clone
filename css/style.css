@@ -253,6 +253,11 @@ font-family:'Open Sans', sans-serif;
     padding-bottom: 5px;
 }
 
+.login #username:not(:focus) ~ .usernameText{
+    opacity: .4; 
+    color: white;
+}
+
 
 
 
@@ -261,11 +266,11 @@ font-family:'Open Sans', sans-serif;
 /* RESPONSIVE */
 
 @media screen and (max-width: 500px){
-
-.background{
-    background: black;
-}
-.container{
+    
+    .background{
+        background: black;
+    }
+    .container{
     position: fixed;
     padding: 0;
     margin: 0;
