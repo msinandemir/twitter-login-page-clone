@@ -34,7 +34,7 @@
                     <span class="border"></span>
                 </div>
                 <div class="username">
-                    <input type="text" name="username" id="username" placeholder="Telefon numarası, e-posta veya kullanıcı adı" > 
+                    <input type="text" name="username" id="username" > <span class="usernameText" id="usernameText">Telefon numarası, e-posta veya kullanıcı adı</span>
                 </div>
                 <button class="btnNext">İleri</button>
                 <button class="btnForget">Şifreni mi unuttun?</button>
@@ -44,5 +44,11 @@
 
         </div>
     </div>
+
+    <script>
+        const input = document.querySelector('.login input[type="text"]');
+        input.addEventListener('focus', () => input.classList.add('focus'));
+        input.addEventListener('focusout', () => !input.value ? input.classList.remove('focus') : false);
+    </script>
 </body>
 </html>
